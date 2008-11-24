@@ -15,3 +15,5 @@
   * Add a 2d gui!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! #medium
   * Add 3d sound module using pygame sounds or OpenAL #medium-low
   * Add Particle effects... #medium
+  * Add AABox, Sphere and QuadTree objects into PYGGEL - added to objects and the scene...
+  * Add Cached and simple versions of A*
