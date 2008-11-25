@@ -11,10 +11,10 @@ PYGGEL is planned to be a general 3d game library/engine for Python.
 The main features of it will be a 3d tile engine, gui and a networking library.
 
 = 3d (opengl) stuff = 
-  * picking
+  * picking #done
   * shadows
   * animated models
-  * camera class (keeps track of position/rotation, renders objects hidden by others, etc.)
+  * camera class (keeps track of position/rotation, renders objects hidden by others, etc.) #done - though more accurate representation of absolute pos of LookAtCamera would be nice...
 
 = 3d (functional) stuff =
   * Collision detection (line, ray, sphere, cube, polygon)
