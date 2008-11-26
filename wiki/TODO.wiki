@@ -9,7 +9,7 @@
   * implement ODE (for at least collisions, but go for fully...) #medium
   * implement some kind of fast depth sorting #very low
   * allow true blending on all objects (once depth sorting is in) #extremely low
-  * Create a Vertex Array class thingy for storing things in... #low - no need at this point
+  * Create a Vertex Array class thingy for storing things in... #Done!
   * look into mapping as much as possible to vertex arrays instead of display lists... #low
   * Add subImage rendering for 2D - ie, a lot of images in one, only rendering a part though... #high
   * Add a 2d gui!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! #medium
