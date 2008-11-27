@@ -45,4 +45,3 @@
   * Camera class objects: Third-person, First-person #Done!
   * math3d class with Vector, Sphere and AABox features (among other standard 3d functions) #Done! (math functions ongoing...)
   * Font support #Done!
-  * add a get_real_pos to camera's #sorta working - LookFromCamera's work, LookAt ones only return the position they are looking at...
