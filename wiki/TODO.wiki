@@ -31,6 +31,7 @@
   * Add Cached and simple versions of A-star #medium priority
   * Add subImage rendering for 2D - ie, a lot of images in one, only rendering a part though... #high
   * Look into porting to use pyglet, see if the speed increase is any - in which case we may be able to inherit pyglets 2d API, and that would solve subImage and other things like that well :)
+  * Look into adding support for VertexBuffer objects (in addition to the VertexArrays) #low - not sure if it will be any speed boost with them changing a lot, we'll see though...
 
 
 ==Version 0.05-alpha1 "start" -- 90-95%==
