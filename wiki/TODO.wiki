@@ -34,7 +34,7 @@
   * Look into adding support for VertexBuffer objects (in addition to the VertexArrays) #low - not sure if it will be any speed boost with them changing a lot, we'll see though...
 
 
-==Version 0.05-alpha1 "start" -- 100%==
+==Version 0.05-alpha1 "start" -- 100% -- Released!==
   * Toggling of display settings #Done!
   * Image2D/Image3D #Done!
   * OBJ mesh loading #Done!
