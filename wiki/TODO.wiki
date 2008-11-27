@@ -16,6 +16,8 @@
   * Add AABox, Sphere and QuadTree objects into PYGGEL - added to objects and the scene... #high priority - lots of potential uses for that I think...
   * Add Cached and simple versions of A-star #medium priority
   * use QuadTree and Sphere bounding volumes to perform frustum culling on all objects #high priority
+  * Splitting the view among viewports - and having Ortho match... #low priority
+  * Allow each scene to have eight lights, and have them generate automatically - instead of only 8 global lights... #medium
 
 ==Version 0.05-alpha1==
   * Toggling of display settings #Done!
