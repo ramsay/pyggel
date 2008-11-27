@@ -1,7 +1,15 @@
 #summary A TODO list for the project...
 #labels Featured,Phase-Requirements
 
-==Version 0.1 -- 0%==
+==Version 0.1-beta1 "stability" -- 0%==
+  * ferret out as many bugs as possible
+  * test on as many platforms as possible
+  * build python install script #low priority
+  * profile engine and optimize bottlenecks...
+  * finish writing nice doc-strings, tutorials, and an API reference manual.
+  * Write a "Making a fast 3d game in PYGGEL" document, explaining some of the ways to make a PYGGEL game go faster... Such as StaticObjectGroups, VertexArray vs. Image3D particle effects, multiple "transitional" scenes - instead of one monster scene, etc.
+
+==Version 0.07-alpha3 "features" -- 0%==
   * add shader support #medium priority
   * enable shadows via shaders (might be as simple as implementing shader) #medium
   * look into creating a color picker and testing speed trade-offs... #low
@@ -9,22 +17,27 @@
   * implement ODE (for at least collisions, but go for fully...) #medium
   * implement some kind of fast depth sorting #very low
   * allow true blending on all objects (once depth sorting is in) #extremely low
-  * look into mapping as much as possible to vertex arrays instead of display lists... #low
-  * Add subImage rendering for 2D - ie, a lot of images in one, only rendering a part though... #high
-  * Add a 2d gui!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! #medium
+  * Add a 2d gui! #medium
   * Add 3d sound module using pygame, OpenAL or pymedia #medium-low PyMedia seems best...
-  * Add AABox, Sphere and QuadTree objects into PYGGEL - added to objects and the scene... #high priority - lots of potential uses for that I think...
-  * Add Cached and simple versions of A-star #medium priority
-  * use QuadTree and Sphere bounding volumes to perform frustum culling on all objects #high priority
   * Splitting the view among viewports - and having Ortho match... #low priority
-  * Allow each scene to have eight lights, and have them generate automatically - instead of only 8 global lights... #medium
+  * Write some doc-strings, a few more tutorials...
+  * Write a new input API - allowing seamless integration with the gui, but also giving some more/faster ways to look up the state of input devices...
 
-==Version 0.05-alpha1 -- 90-95%==
+
+==Version 0.06-alpha2 "speed" -- 0%==
+  * Allow each scene to have eight lights, and have them generate automatically - instead of only 8 global lights... #medium
+  * Add AABox, Sphere and QuadTree objects into PYGGEL - added to objects and the scene... #high priority - lots of potential uses for that I think...
+  * use QuadTree and Sphere bounding volumes to perform frustum culling on all objects #high priority
+  * Add Cached and simple versions of A-star #medium priority
+  * Add subImage rendering for 2D - ie, a lot of images in one, only rendering a part though... #high
+
+
+==Version 0.05-alpha1 "start" -- 90-95%==
   * Toggling of display settings #Done!
   * Image2D/Image3D #Done!
   * OBJ mesh loading #Done!
   * Geometry classes #Done - ongoing (if/when we need more types)
-  * Texture, DisplayList, VertexArray and VertexBuffer objects #all but VBO's done... not sure if we need VBO's either...
+  * Texture, DisplayList and VertexArray #Done!
   * Particle effects #Done!
   * Picking #Done - only select buffer picking for now - save color buffer picking for next release (if any...)
   * Camera class objects: Third-person, First-person #Done!
