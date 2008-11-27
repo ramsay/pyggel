@@ -14,6 +14,7 @@
   * Add subImage rendering for 2D - ie, a lot of images in one, only rendering a part though... #high
   * Add a 2d gui!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! #medium
   * Add 3d sound module using pygame sounds or OpenAL #medium-low
-  * Add Particle effects... #medium
+  * Add Particle effects... #Done!
   * Add AABox, Sphere and QuadTree objects into PYGGEL - added to objects and the scene... #high priority - lots of potential uses for that I think...
   * Add Cached and simple versions of A-star #medium priority
+  * use QuadTree and Sphere bounding volumes to perform frustum culling on all objects #high priority
