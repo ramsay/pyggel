@@ -1,7 +1,7 @@
 #summary A TODO list for the project...
 #labels Featured,Phase-Requirements
 
-==Version 0.1== -- 0%
+==Version 0.1 -- 0%==
   * add shader support #medium priority
   * enable shadows via shaders (might be as simple as implementing shader) #medium
   * look into creating a color picker and testing speed trade-offs... #low
@@ -19,7 +19,7 @@
   * Splitting the view among viewports - and having Ortho match... #low priority
   * Allow each scene to have eight lights, and have them generate automatically - instead of only 8 global lights... #medium
 
-==Version 0.05-alpha1== -- 90-95%
+==Version 0.05-alpha1 -- 90-95%==
   * Toggling of display settings #Done!
   * Image2D/Image3D #Done!
   * OBJ mesh loading #Done!
