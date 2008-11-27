@@ -34,7 +34,7 @@
   * Look into adding support for VertexBuffer objects (in addition to the VertexArrays) #low - not sure if it will be any speed boost with them changing a lot, we'll see though...
 
 
-==Version 0.05-alpha1 "start" -- 90-95%==
+==Version 0.05-alpha1 "start" -- 99%==
   * Toggling of display settings #Done!
   * Image2D/Image3D #Done!
   * OBJ mesh loading #Done!
@@ -43,5 +43,6 @@
   * Particle effects #Done!
   * Picking #Done - only select buffer picking for now - save color buffer picking for next release (if any...)
   * Camera class objects: Third-person, First-person #Done!
-  * math3d class with Vector, Sphere and AABox features (among other standard 3d functions) #Vector and math functions done (ongoing) Sphere/AABox still needed...
+  * math3d class with Vector, Sphere and AABox features (among other standard 3d functions) #Done! (math functions ongoing...)
   * Font support #Done!
+  * add a get_real_pos to camera's, that way you can accurately tell where they are, even using third-person ones that are gl rotated...
