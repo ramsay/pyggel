@@ -1,4 +1,5 @@
 #summary an OUTDATED "place-holder" api.
+#labels Deprecated,Phase-Design
 = Note =
 This page is outdated - it was the original "target" api for a version of pyggel intended to be more of a 3d tile engine.
 It is no longer a goal to match this api, or to include all features listed here, but the page is kept because there are some features I don't want to forget LOL
