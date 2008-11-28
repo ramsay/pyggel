@@ -1,4 +1,5 @@
 #summary An API reference for implemented features - and a discussion for new API or changes.
+#labels Featured,Phase-Design,Phase-Implementation
 
 = Introduction =
 Add any new feature API's here, and any ones you want to add so we can discuss it...
