@@ -25,9 +25,9 @@
   * Write a new input API - allowing seamless integration with the gui, but also giving some more/faster ways to look up the state of input devices...
 
 
-==Version 0.06-alpha2 "speed" -- 0%==
+==Version 0.06-alpha2 "speed" -- 25%==
   * Allow each scene to have eight lights, and have them generate automatically - instead of only 8 global lights... #medium
-  * Add AABox, Sphere and QuadTree objects into PYGGEL - added to objects and the scene... #high priority - lots of potential uses for that I think...
+  * Add AABox, Sphere and QuadTree objects into PYGGEL - added to objects and the scene... #Done - Quad/Oct Tree's too slow...
   * Instead of a Quad/Oct Tree, use a "hash tree" - a dict of nodes #medium
   * use QuadTree and Sphere bounding volumes to perform frustum culling on all objects #high priority
   * Add Cached and simple versions of A-star #medium priority
