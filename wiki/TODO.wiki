@@ -32,7 +32,7 @@
   * Allow each scene to have eight lights, and have them generate automatically - instead of only 8 global lights... #DONE!
   * Add AABox, Sphere and QuadTree objects into PYGGEL - added to objects and the scene... #Done - Quad/Oct Tree's too slow...
   * Instead of a Quad/Oct Tree, use a "hash tree" - a dict of nodes #medium
-  * use QuadTree and Sphere bounding volumes to perform frustum culling on all objects #high priority
+  * use Sphere bounding volumes to perform frustum culling on all objects #high priority
   * Add Cached and simple versions of A-star #medium priority
   * Add subImage rendering for 2D - ie, a lot of images in one, only rendering a part though... #high
   * Look into porting to use pyglet #Done - not porting
