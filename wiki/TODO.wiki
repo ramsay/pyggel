@@ -25,7 +25,7 @@
   * Write a new input API - allowing seamless integration with the gui, but also giving some more/faster ways to look up the state of input devices...
 
 
-==Version 0.06-alpha2 "speed" -- 25%==
+==Version 0.06-alpha2 "speed" -- 20%==
   * Allow each scene to have eight lights, and have them generate automatically - instead of only 8 global lights... #medium
   * Add AABox, Sphere and QuadTree objects into PYGGEL - added to objects and the scene... #Done - Quad/Oct Tree's too slow...
   * Instead of a Quad/Oct Tree, use a "hash tree" - a dict of nodes #medium
@@ -34,6 +34,7 @@
   * Add subImage rendering for 2D - ie, a lot of images in one, only rendering a part though... #high
   * Look into porting to use pyglet #Done - not porting
   * Look into adding support for VertexBuffer objects (in addition to the VertexArrays) #low - not sure if it will be any speed boost with them changing a lot, we'll see though...
+  * Look into using compiled parts for optimizations (Cython, Pyrex, etc....)
 
 
 ==Version 0.05-alpha1 "start" -- 100% -- Released!==
