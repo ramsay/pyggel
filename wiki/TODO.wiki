@@ -29,7 +29,7 @@
   * Add Cached and simple versions of A-star #low priority
 
 
-==Version 0.06-alpha2 "speed" -- 87.5%==
+==Version 0.06-alpha2 "speed" -- 100% READY!==
   * Allow each scene to have eight lights, and have them generate automatically - instead of only 8 global lights... #DONE!
   * Add AABox, Sphere and QuadTree objects into PYGGEL - added to objects and the scene... #Done - Quad/Oct Tree's too slow...
   * Instead of a Quad/Oct Tree, use a "hash tree" - a dict of nodes #DONE!
@@ -37,7 +37,7 @@
   * Add subImage rendering for 2D - ie, a lot of images in one, only rendering a part though... #Done!
   * Look into porting to use pyglet #Done - not porting
   * Look into adding support for VertexBuffer objects (in addition to the VertexArrays) #Sort of done - created a test, not any faster as far as I can tell, and I can't get them to display or correctly or update without recreation - so not much use. Perhaps will revisit at a later time.
-  * Test new collision detection and partition culling features!
+  * Test new collision detection and partition culling features! #Failed, miserably, a lot of the functionality wasn't correctly implemented, and to get it working causes the code to become far to complicated, both the source and the API-usage - all features removed (VolumeStore, SpaceTree's, etc.)
 
 
 ==Version 0.05-alpha1 "start" -- 100% -- Released!==
