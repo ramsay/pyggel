@@ -30,7 +30,7 @@
   * Add a C_OBJ compiler and loader to PYGGEL - basically the compiler would take an OBJ file, it's MTL's, and any images it needs, and compile them together #Easy - so low, but pretty quick would be nice...
 
 
-==Version 0.06-alpha2 "speed" -- 100% READY!==
+==Version 0.06-alpha2 "speed" -- 100% Released!==
   * Allow each scene to have eight lights, and have them generate automatically - instead of only 8 global lights... #DONE!
   * Add AABox, Sphere and QuadTree objects into PYGGEL - added to objects and the scene... #Done - Quad/Oct Tree's too slow...
   * Instead of a Quad/Oct Tree, use a "hash tree" - a dict of nodes #DONE!
