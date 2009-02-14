@@ -33,6 +33,7 @@
   * Write a new input API - allowing seamless integration with the gui, but also giving some more/faster ways to look up the state of input devices... #Done! - basically, might need more features as we continue...
   * Add a 2d gui! #medium - 25% done - layout and basic widgets done.
   * implement animated 2d images - sprite sheets, "gif's"?, multiple images, etc. #medium
+  * add support for custom cursors through the view... #medium
 
 
 ==Version 0.06-alpha2 "speed" -- 100% Released!==
