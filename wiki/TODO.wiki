@@ -27,12 +27,12 @@
   * Add Cached and simple versions of A-star #low priority
 
 
-==Version 0.07-alpha3 "features and stability" -- 65% Completed==
+==Version 0.07-alpha3 "features and stability" -- 75% Completed==
   * Add a "scaletowindow" attribute to all 2d things - basically, use code to place things at optimum size (eg, 640, 480) and if the window is changed to like (800, 600) then the images and such are scaled and mouse events are scaled - so the code stays the same... #DONE! added equivalent functionality
   * Add a C_OBJ compiler and loader to PYGGEL - basically the compiler would take an OBJ file, it's MTL's, and any images it needs, and compile them together #Easy - so low, but pretty quick would be nice...
   * Write a new input API - allowing seamless integration with the gui, but also giving some more/faster ways to look up the state of input devices... #Done! - basically, might need more features as we continue...
   * Add a 2d gui! #medium - 25% done - layout and basic widgets done.
-  * implement animated 2d images - sprite sheets, "gif's"?, multiple images, etc. #medium - 50% done, base class and gif loading done
+  * implement animated 2d images - sprite sheets, "gif's"?, multiple images, etc. #DONE!
   * add support for custom cursors through the view... #DONE!
 
 
