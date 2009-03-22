@@ -1,5 +1,5 @@
 #summary a list of the capabilities of the engine
-#labels Featured
+#labels Deprecated
 
 = Introduction =
 
