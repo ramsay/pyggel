@@ -29,6 +29,7 @@
   * Write some doc-strings, a few more tutorials...
   * Add Cached and simple versions of A-star #low priority
   * Make Image/Image3D and Texture only bind if not current texture. Move texture binding out of display lists so you can actually check this - particles at least will be much faster...
+  * Remove and replace all data assets we didn't make ourselves, the gifs, the obj meshes, etc.
 
 
 ==Version 0.07-alpha3 "features and stability" -- 100% Completed - just testing now==
