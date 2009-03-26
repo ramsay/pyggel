@@ -1,0 +1,12 @@
+#Changelog for various versions
+
+
+=Version 0.07b=
+Added get_mouse_pos2d method to view.screen
+Updated Tutorials
+Speed optimizations
+Fixed bug where geometry.Cube objects were too big
+Misc other bugfixes
+
+=Versions up to 0.07-alpha3=
+No data
