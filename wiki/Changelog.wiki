@@ -1,4 +1,4 @@
-#Changelog for various versions
+#summary Changelog for various versions
 
 
 =Version 0.07b=
