@@ -11,7 +11,7 @@
   * Removed deprecation of texture flipping arg for Textures - as OBJ files (and other things) require it.
   * Updated test_safe function so kwargs work correctly.
   * Changed Font3D fsize arg to size, to match other fonts
-  * Made Radio/MultiChoiceRadio widgets change event return current state of all options.
+  * Made Radio/MultiChoiceRadio widgets "change" event return current state of all options.
   * Replaced old pick method of scenes, now the render method returns any picked objects.
   * Updated randfloat so you can specify how many digits to the right of the decimal point to use.
   * Added a function to math3d that calculates the lighting normals for triangles.
