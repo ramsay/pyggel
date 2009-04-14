@@ -6,9 +6,6 @@ The view module contains functions and objects used to manipulate initiation, se
 and changing of the screen window and OpenGL states.
 """
 
-##from OpenGL import error
-##oglError = error
-
 from include import *
 
 class _Screen(object):
@@ -246,16 +243,24 @@ def set_fog_depth(min=10, max=125):
     glFogf(GL_FOG_END, max)
 
 def set_debug(boolean):
-    """Enable/Disable OpenGL debugging - specifically, this turns on/off calling of glGetError after every call."""
-    screen.debug = boolean
-    if boolean:
-        oglError.ErrorChecker.registerChecker(None)
-    else:
-        oglError.ErrorChecker.registerChecker(lambda:None)
+    """Enable/Disable OpenGL debugging - specifically, this turns on/off calling of glGetError after every call.
+       Not avaiable in PYGGEL-pyglet!"""
+    raise AttributeError("""
+    Error: PYGGEL-pyglet does not support set_debug/toggle_debug!
+    To disable debugging, add these lines before importing pyggel:
+        import pyglet
+        pyglet.options['debug_gl'] = False
+    You can not disable/enable debug after pyggel is imported!""")
 
 def toggle_debug():
-    """Toggle OpenGL debugging."""
-    set_debug(not screen.debug)
+    """Toggle OpenGL debugging.
+       Not available in PYGGEL-pyglet!"""
+    raise AttributeError("""
+    Error: PYGGEL-pyglet does not support set_debug/toggle_debug!
+    To disable debugging, add these lines before importing pyggel:
+        import pyglet
+        pyglet.options['debug_gl'] = False
+    You can not disable/enable debug after pyggel is imported!""")
 
 def build_screen():
     """Create the display window using the current set of screen parameters."""

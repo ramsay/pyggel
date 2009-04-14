@@ -36,11 +36,12 @@ class Light(object):
         """Resets the position and enables the light, called after a camera is pushed to ensure it remains in the right place"""
         if not self.gl_light == None:
             gl_light = self.gl_light
-            glLightfv(gl_light, GL_AMBIENT, self.ambient)
-            glLightfv(gl_light, GL_DIFFUSE, self.diffuse)
-            glLightfv(gl_light, GL_SPECULAR, self.specular)
-            glLightfv(gl_light, GL_POSITION, (self.pos[0], self.pos[1], -self.pos[2], int(not self.directional)))
-            glLightfv(gl_light, GL_SPOT_DIRECTION, self.spot_direction+(0,))
+            glLightfv(gl_light, GL_AMBIENT, (GLfloat*4)(*self.ambient))
+            glLightfv(gl_light, GL_DIFFUSE, (GLfloat*4)(*self.diffuse))
+            glLightfv(gl_light, GL_SPECULAR, (GLfloat*4)(*self.specular))
+            xx = (self.pos[0], self.pos[1], -self.pos[2], int(not self.directional))
+            glLightfv(gl_light, GL_POSITION, (GLfloat*4)(*xx))
+            glLightfv(gl_light, GL_SPOT_DIRECTION, (GLfloat*4)(*self.spot_direction+(0,)))
             glEnable(gl_light)
 
     def hide(self):

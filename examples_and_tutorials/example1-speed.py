@@ -4,6 +4,13 @@ This example shows how to use some of the built-in speed increasers in PYGGEL"""
 
 import _set_path #this just makes sure we grab pyggel/data directories - so if we are running from the install directory it still works ;)
 
+#Now, OpenGL does a ton of debug testing, which can really slow things down, so you can disable that for a speed boost
+#NOTE, tracebacks won't be as complete anymore ;)
+#This is different in PYGGEL-pyglet from regular PYGGEL, in that we must do this here (and with a different api)
+#and you can not turn on/off/toggle it later
+import pyglet
+pyglet.options["debug_gl"] = False
+    
 import pyggel
 from pyggel import *
 
@@ -15,10 +22,6 @@ def main():
     #but, this can be a bit of a mermoy hog, so if you don't need it to get decent framerates
     #then it is suggested that you disable it...
     pyggel.init(screen_size=(640,480))
-
-    #Now, OpenGL does a ton of debug testing, which can really slow things down, so you can disable that for a speed boost
-    #NOTE, tracebacks won't be as complete anymore ;)
-    pyggel.view.set_debug(False)
 
     event_handler = pyggel.event.Handler()
 

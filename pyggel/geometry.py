@@ -117,7 +117,7 @@ class Cube(object):
             glNormal3f(*self.normals[i[6]])
 
             for x in i[:4]:
-                glTexCoord2fv(coords[ix])
+                glTexCoord2fv((GLfloat*len(coords[ix]))(*coords[ix]))
                 a, b, c = self.corners[x]
 ##                a *= 1.1
 ##                b *= 1.1
@@ -142,7 +142,7 @@ class Cube(object):
             glScalef(*self.scale)
         except:
             glScalef(self.scale, self.scale, self.scale)
-        glColor(*self.colorize)
+        glColor4f(*misc.pad4(self.colorize))
         self.display_list.render()
         glPopMatrix()
 
@@ -272,7 +272,7 @@ class Plane(Quad):
             glScalef(*self.scale)
         except:
             glScalef(self.scale, self.scale, self.scale)
-        glColor(*self.colorize)
+        glColor4f(*misc.pad4(self.colorize))
         self.display_list.render()
         glPopMatrix()
 
@@ -380,7 +380,7 @@ class Sphere(object):
             glScalef(*self.scale)
         except:
             glScalef(self.scale, self.scale, self.scale)
-        glColor(*self.colorize)
+        glColor4f(*misc.pad4(self.colorize))
         self.display_list.render()
         glPopMatrix()
 

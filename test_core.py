@@ -1,3 +1,6 @@
+import pyglet
+pyglet.options["debug_gl"] = False
+
 import pyggel
 from pyggel import *
 
@@ -5,7 +8,6 @@ import random
 
 def main():
     pyggel.view.init(screen_size=(800,600), screen_size_2d=(640, 480))
-    pyggel.view.set_debug(False)
 
     my_light = pyggel.light.Light((0,100,0), (0.5,0.5,0.5,1),
                                   (1,1,1,1), (50,50,50,10),

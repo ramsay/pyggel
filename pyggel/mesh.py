@@ -98,10 +98,13 @@ def OBJ(filename, swapyz=True, pos=(0,0,0),
         glBegin(GL_POLYGON)
         for i in xrange(len(vertices)):
             if normals[i] > 0:
-                glNormal3fv(snormals[normals[i] - 1])
+                nn = snormals[normals[i] - 1]
+                glNormal3fv((GLfloat*len(nn))(*nn))
             if texture_coords[i] > 0:
-                glTexCoord2fv(stexcoords[texture_coords[i] - 1])
-            glVertex3fv(svertices[vertices[i] - 1])
+                nn = stexcoords[texture_coords[i] - 1]
+                glTexCoord2fv((GLfloat*len(nn))(*nn))
+            nn = svertices[vertices[i] - 1]
+            glVertex3fv((GLfloat*len(nn))(*nn))
         glEnd()
     gl_list.end()
 
@@ -182,6 +185,6 @@ class BasicMesh(object):
             glScalef(*self.scale)
         except:
             glScalef(self.scale, self.scale, self.scale)
-        glColor(*self.colorize)
+        glColor4f(*self.colorize)
         self.display_list.render()
         glPopMatrix()

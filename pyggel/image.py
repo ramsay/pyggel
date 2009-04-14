@@ -8,7 +8,7 @@ import time
 
 from include import *
 
-import view, data
+import view, data, misc
 
 import Image as pilImage
 
@@ -183,7 +183,7 @@ class Image(object):
         except:
             glScalef(self.scale, self.scale, 1)
 
-        glColor(*self.colorize)
+        glColor4f(*misc.pad4(self.colorize))
         self.display_list.render()
         glPopMatrix()
         if self.to_be_blitted:
@@ -276,7 +276,7 @@ class Image3D(Image):
             glScalef(self.scale[0], self.scale[1], 1)
         except:
             glScalef(self.scale, self.scale, 1)
-        glColor(*self.colorize)
+        glColor4f(*misc.pad4(self.colorize))
         glDisable(GL_LIGHTING)
         self.display_list.render()
         if view.screen.lighting:

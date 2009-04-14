@@ -10,6 +10,10 @@ import view, math3d, data
 
 import random
 
+def pad4(value):
+    value = tuple(value)
+    return value+((0,)*(4-len(value)))
+
 def test_safe(filename, acceptable_functions=[]):
     """tests all the function calls in a file against a set of acceptable ones.
        this function also does not allow importing of other modules.

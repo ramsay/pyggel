@@ -88,8 +88,7 @@ class DisplayList(object):
     """An object to compile and store an OpenGL display list"""
     def __init__(self):
         """Creat the list"""
-        self.gl_list = GLuint()
-        glGenLists(1, ctypes.byref(self.gl_list))
+        self.gl_list = glGenLists(1)
 
     def begin(self):
         """Begin recording to the list - anything rendered after this will be compiled into the list and not actually rendered"""
@@ -135,9 +134,48 @@ class VertexArray(object):
         glEnableClientState(GL_COLOR_ARRAY)
         glEnableClientState(GL_TEXTURE_COORD_ARRAY)
 
-        glVertexPointer(3, GL_FLOAT, 0, self.verts)
-        glColorPointer(4, GL_FLOAT, 0, self.colors)
-        glTexCoordPointer(2, GL_FLOAT, 0, self.texcs)
+        assert len(self.verts) == len(self.colors) == len(self.texcs)
+        num = len(self.verts)
+
+        vv = []
+        for i in self.verts:
+            a, b, c = i
+            if a == None:
+                a = 0.0
+            if b == None:
+                b = 0.0
+            if c == None:
+                c = 0.0
+            vv.extend((a,b,c))
+        vv = (GLfloat*(num*3))(*vv)
+
+        cc = []
+        for i in self.colors:
+            a, b, c, d = i
+            if a == None:
+                a = 0.0
+            if b == None:
+                b = 0.0
+            if c == None:
+                c = 0.0
+            if d == None:
+                d = 0.0
+            cc.extend((a,b,c,d))
+        cc = (GLfloat*(num*4))(*cc)
+
+        tt = []
+        for i in self.texcs:
+            a, b = i
+            if a == None:
+                a = 0.0
+            if b == None:
+                b = 0.0
+            tt.extend((a,b))
+        tt = (GLfloat*(num*2))(*tt)
+
+        glVertexPointer(3, GL_FLOAT, 0, vv)
+        glColorPointer(4, GL_FLOAT, 0, cc)
+        glTexCoordPointer(2, GL_FLOAT, 0, tt)
 
         glDrawArrays(self.render_type, 0, self.max_size)
 
