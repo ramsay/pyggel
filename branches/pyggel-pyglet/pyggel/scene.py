@@ -56,22 +56,26 @@ class Scene(object):
                 if i.visible:
                     i.render(camera)
                     if self.pick:
-                        dep = glReadPixelsf(mpx, mpy, 1, 1, GL_DEPTH_COMPONENT)[0][0]
-                        if dep < last_depth:
-                            last_depth = dep
+                        dep = (GLfloat*4)(0,0,0,0)
+                        glReadPixels(mpx, mpy, 1, 1, GL_DEPTH_COMPONENT, GL_FLOAT, dep)
+                        if dep[0] < last_depth:
+                            last_depth = dep[0]
                             pick = i
             glDisable(GL_ALPHA_TEST)
-            r, g, b, a = glReadPixelsf(mpx, mpy, 1, 1, GL_RGBA)[0][0]
+            rgba = (GLfloat*4)(0,0,0,0)
+            glReadPixels(mpx, mpy, 1, 1, GL_RGBA, GL_FLOAT, rgba)
+            r,g,b,a = rgba
             last_color = r,g,b,a
             glDepthMask(GL_FALSE)
             for i in self.graph.render_3d_blend:
                 if i.visible:
                     i.render(camera)
                     if self.pick:
-                        r, g, b, a = glReadPixelsf(mpx, mpy, 1, 1, GL_RGBA)[0][0]
+                        rgba = (GLfloat*4)(0,0,0,0)
+                        glReadPixels(mpx, mpy, 1, 1, GL_RGBA, GL_FLOAT, rgba)
+                        r,g,b,a = rgba
                         col = r,g,b,a
                         if col != last_color:
-                            print "swfjhsdfh"
                             last_color = col
                             pick = i
             glDepthMask(GL_TRUE)
@@ -80,7 +84,9 @@ class Scene(object):
                 if i.visible:
                     i.render(camera)
                     if self.pick:
-                        r, g, b, a = glReadPixelsf(mpx, mpy, 1, 1, GL_GBA)[0][0]
+                        rgba = (GLfloat*4)(0,0,0,0)
+                        glReadPixels(mpx, mpy, 1, 1, GL_RGBA, GL_FLOAT, rgba)
+                        r,g,b,a = rgba
                         col = r,g,b,a
                         if col != last_color:
                             last_color = col
