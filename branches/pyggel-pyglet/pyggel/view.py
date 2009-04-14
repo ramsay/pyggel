@@ -6,8 +6,8 @@ The view module contains functions and objects used to manipulate initiation, se
 and changing of the screen window and OpenGL states.
 """
 
-from OpenGL import error
-oglError = error
+##from OpenGL import error
+##oglError = error
 
 from include import *
 
@@ -223,6 +223,8 @@ def toggle_cursor_visible():
 
 def set_fog_color(rgba=(.5,.5,.5,.5)):
     """Set the fog color (RGBA 0-1)"""
+##    r,g,b,a = [GLfloat(i) for i in rgba]
+    rgba = (GLfloat * 4)(*rgba)
     glFogfv(GL_FOG_COLOR, rgba)
     screen.fog_color = rgba
 
