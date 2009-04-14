@@ -21,7 +21,8 @@ class Texture(object):
 
         self.size = (0,0)
 
-        self.gl_tex = glGenTextures(1)
+        self.gl_tex = GLuint()
+        glGenTextures(1, ctypes.byref(self.gl_tex))
 
         if type(filename) is type(""):
             self._load_file()
@@ -87,7 +88,8 @@ class DisplayList(object):
     """An object to compile and store an OpenGL display list"""
     def __init__(self):
         """Creat the list"""
-        self.gl_list = glGenLists(1)
+        self.gl_list = GLuint()
+        glGenLists(1, ctypes.byref(self.gl_list))
 
     def begin(self):
         """Begin recording to the list - anything rendered after this will be compiled into the list and not actually rendered"""
