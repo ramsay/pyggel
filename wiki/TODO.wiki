@@ -17,12 +17,13 @@
     * Turn off culling for picking, enable for rendering - as picking has speed issues with it.
 
 ==Version 0.08-alpha4 "features" -- 0%==
-  * add shader support #medium priority
+  * add shader support #50% finished, needs the niceties of error checking and then get/set of values in shader objects implemented, as well as merging of shaders, so when you make several they hook together nicely...
   * enable shadows via shaders (might be as simple as implementing shader) #medium
   * look into creating a color picker and testing speed trade-offs... #DONE! replaced with during-render picker
   * implement Cal3D animated models #high
   * implement ODE (for at least collisions, but go for fully...) #medium
   * implement some kind of fast depth sorting #very low
+  * implement FrameBuffer objects #medium priority
   * allow true blending on all objects (once depth sorting is in) #extremely low
   * Add 3d sound module using pygame, OpenAL or pymedia #medium-low PyMedia seems best...
   * Splitting the view among viewports - and having Ortho match... #low priority
