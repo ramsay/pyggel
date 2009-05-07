@@ -16,7 +16,7 @@
     * Fix the order of specifying vertices so that back face culling works
     * Turn off culling for picking, enable for rendering - as picking has speed issues with it.
 
-==Version 0.08-alpha4 "features" -- 0%==
+==Version 0.08-alpha4 "features" -- 50%==
   * add shader support #Not doing, doesn't fit into pyggel nicely
   * look into creating a color picker and testing speed trade-offs... #DONE! replaced with during-render picker
   * implement Cal3D animated models #high
@@ -28,6 +28,7 @@
   * Add Cached and simple versions of A-star #low priority
   * Make Image/Image3D and Texture only bind if not current texture. Move texture binding out of display lists so you can actually check this - particles at least will be much faster... #DONE!
   * Remove and replace all data assets we didn't make ourselves, the gifs, the obj meshes, etc. #DONE!
+  * Make sure all objects are rendering clock wise (or is it CCW?) so we can enable backface culling and some kind of shadows...
 
 
 ==Version 0.07-alpha3 "features and stability" -- 100% Released!==
