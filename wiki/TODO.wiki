@@ -17,7 +17,7 @@
     * Turn off culling for picking, enable for rendering - as picking has speed issues with it.
 
 ==Version 0.08-alpha4 "features" -- 0%==
-  * add shader support #50% finished, needs the niceties of error checking and then get/set of values in shader objects implemented, as well as merging of shaders, so when you make several they hook together nicely...
+  * add shader support #Not doing, doesn't fit into pyggel nicely
   * look into creating a color picker and testing speed trade-offs... #DONE! replaced with during-render picker
   * implement Cal3D animated models #high
   * implement ODE (for at least collisions, but go for fully...) #medium
