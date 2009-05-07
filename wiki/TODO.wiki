@@ -12,8 +12,6 @@
   * finish writing nice doc-strings, tutorials, and an API reference manual.
   * Write a "Making a fast 3d game in PYGGEL" document, explaining some of the ways to make a PYGGEL game go faster... Such as StaticObjectGroups, VertexArray vs. Image3D particle effects, multiple "transitional" scenes - instead of one monster scene, etc.
   * Ensure API is consistent, guessable and intelligent...
-  * Implement back face culling, requires;
-    * Fix the order of specifying vertices so that back face culling works
 
 ==Version 0.08-alpha4 "features" -- 58%==
   * add shader support #Not doing, doesn't fit into pyggel nicely
