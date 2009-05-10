@@ -3,6 +3,7 @@
 
 ==Future==
   * Look into using compiled parts for optimizations (Cython, Pyrex, etc....)
+  * add shader support
 
 ==Version 0.1-beta1 "stability" -- 0%==
   * ferret out as many bugs as possible
@@ -15,7 +16,6 @@
   * Add some kind of shadow system!!!
 
 ==Version 0.08-alpha4 "features" -- 58%==
-  * add shader support #Not doing, doesn't fit into pyggel nicely
   * look into creating a color picker and testing speed trade-offs... #DONE! replaced with during-render picker
   * implement Cal3D animated models #high
   * implement ODE (for at least collisions, but go for fully...) #medium
