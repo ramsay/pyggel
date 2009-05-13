@@ -27,6 +27,7 @@
   * Make Image/Image3D and Texture only bind if not current texture. Move texture binding out of display lists so you can actually check this - particles at least will be much faster... #DONE!
   * Remove and replace all data assets we didn't make ourselves, the gifs, the obj meshes, etc. #DONE!
   * Make sure all objects are rendering clock wise (or is it CCW?) so we can enable backface culling and some kind of shadows... #DONE! and was CCW :P
+  * integrate Animator.py mesh class(es) into mesh.py, replacing the current ones #high
 
 
 ==Version 0.07-alpha3 "features and stability" -- 100% Released!==
