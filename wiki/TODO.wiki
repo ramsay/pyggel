@@ -15,7 +15,7 @@
   * Ensure API is consistent, guessable and intelligent...
   * Add some kind of shadow system!!!
 
-==Version 0.08-alpha4 "features" -- 64%==
+==Version 0.08-alpha4 "features" -- 67%==
   * look into creating a color picker and testing speed trade-offs... #DONE! replaced with during-render picker
   * implement Cal3D animated models #high
   * implement ODE (for at least collisions, but go for fully...) #medium
@@ -27,6 +27,7 @@
   * Remove and replace all data assets we didn't make ourselves, the gifs, the obj meshes, etc. #DONE!
   * Make sure all objects are rendering clock wise (or is it CCW?) so we can enable backface culling and some kind of shadows... #DONE! and was CCW :P
   * integrate Animator.py mesh class(es) into mesh.py, replacing the current ones #Done!
+  * implement some form of testing for CW/CCW ordering of vertices #Done!
 
 
 ==Version 0.07-alpha3 "features and stability" -- 100% Released!==
