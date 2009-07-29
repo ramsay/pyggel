@@ -15,7 +15,7 @@
   * Ensure API is consistent, guessable and intelligent...
   * Add some kind of shadow system!!!
 
-==Version 0.08-alpha4 "features" -- 58%==
+==Version 0.08-alpha4 "features" -- 64%==
   * look into creating a color picker and testing speed trade-offs... #DONE! replaced with during-render picker
   * implement Cal3D animated models #high
   * implement ODE (for at least collisions, but go for fully...) #medium
@@ -23,7 +23,6 @@
   * Add 3d sound module using pygame, OpenAL or pymedia #medium-low PyMedia seems best...
   * Splitting the view among viewports - and having Ortho match... #DONE! not going to do precisely, can fake with frame buffers and such now...
   * Write some doc-strings, a few more tutorials...
-  * Add Cached and simple versions of A-star #low priority
   * Make Image/Image3D and Texture only bind if not current texture. Move texture binding out of display lists so you can actually check this - particles at least will be much faster... #DONE!
   * Remove and replace all data assets we didn't make ourselves, the gifs, the obj meshes, etc. #DONE!
   * Make sure all objects are rendering clock wise (or is it CCW?) so we can enable backface culling and some kind of shadows... #DONE! and was CCW :P
