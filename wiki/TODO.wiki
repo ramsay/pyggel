@@ -17,7 +17,7 @@
   * implement Cal3D (or other) animated models #high
   * implement ODE (for at least collisions, but go for fully...) #medium
 
-==Version 0.08-alpha4 "features" -- 67%==
+==Version 0.08-alpha4 "features" -- 80%==
   * look into creating a color picker and testing speed trade-offs... #DONE! replaced with during-render picker
   * implement FrameBuffer objects #DONE!
   * Add 3d sound module using pygame, OpenAL or pymedia #medium-low PyMedia seems best...
