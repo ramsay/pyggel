@@ -14,11 +14,11 @@
   * Write a "Making a fast 3d game in PYGGEL" document, explaining some of the ways to make a PYGGEL game go faster... Such as StaticObjectGroups, VertexArray vs. Image3D particle effects, multiple "transitional" scenes - instead of one monster scene, etc.
   * Ensure API is consistent, guessable and intelligent...
   * Add some kind of shadow system!!!
+  * implement Cal3D (or other) animated models #high
+  * implement ODE (for at least collisions, but go for fully...) #medium
 
 ==Version 0.08-alpha4 "features" -- 67%==
   * look into creating a color picker and testing speed trade-offs... #DONE! replaced with during-render picker
-  * implement Cal3D animated models #high
-  * implement ODE (for at least collisions, but go for fully...) #medium
   * implement FrameBuffer objects #DONE!
   * Add 3d sound module using pygame, OpenAL or pymedia #medium-low PyMedia seems best...
   * Splitting the view among viewports - and having Ortho match... #DONE! not going to do precisely, can fake with frame buffers and such now...
