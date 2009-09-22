@@ -9,7 +9,6 @@
   * ferret out as many bugs as possible
   * test on as many platforms as possible
   * build python install script #low priority
-  * profile engine and optimize bottlenecks...
   * finish writing nice doc-strings, tutorials, and an API reference manual.
   * Write a "Making a fast 3d game in PYGGEL" document, explaining some of the ways to make a PYGGEL game go faster... Such as StaticObjectGroups, VertexArray vs. Image3D particle effects, multiple "transitional" scenes - instead of one monster scene, etc.
   * Ensure API is consistent, guessable and intelligent...
@@ -17,6 +16,14 @@
   * implement Cal3D models #low
   * implement ODE (for at least collisions, but go for fully...) #medium
   * Add 3d sound module using pygame, OpenAL or pymedia #medium-low PyMedia seems best...
+
+==Version 0.09-alpha5 "speed" -- 10% planning==
+  * VBO support #DONE!
+  * scene transitions (fade in/out, swirly in/out, etc.)
+  * ext module for generating static data good for stuffing into VBO's
+  * profile engine and optimize bottlenecks...
+  * texture packer and subimaging, for use primarily in ext VBO objects
+  * handle GUI image data faster (instead of rebuilding each image for each widget, scale with opengl where needed from singleton)
 
 ==Version 0.08-alpha4 "features" -- 100% Released==
   * look into creating a color picker and testing speed trade-offs... #DONE! replaced with during-render picker
