@@ -1,0 +1,49 @@
+NEW REQUIREMENTS:
+
+Python 2.7
+Pygame 1.9.1
+PyOpenGL 3.1.0
+Numpy 1.9.1
+
+
+
+Libraries (thinking about adding):
+
+ODE (physics and bone animations?)
+PIL (for better image manipulation)
+PyOpenGL_accelerate (should enhance speed considerably)
+GLE (this should have come with installer - does it?)
+
+psyco (needed?)
+
+
+(opengl context requirements, possibly needed for particle effects)
+simpleparse 2.1.1
+PyVRML97 2.3.0a4
+pydispatcher 2.0.5
+OpenGLContext 2.2.0a3
+
+
+
+Thoughts:
+
+How to load models with bones (and better yet, skeletal animations)
+Need fast terrain rendering, that allows for fluid manipulation (addition, subtraction, changing) of points and materials
+
+The "Hack" disabling glGetError checking after every call does not work in this version of pOGL, it may be inside accelerate
+
+
+
+Features wanted:
+2d rendering (with speedups where possible)
+GUI system (mouse event based, primarily)
+	themeable with json files? O.o
+	custom mouse cursors as part of the gui
+3d Model loading, animation, and bones (for attaching objects)
+3d textures (if possible, to create texture sets for larger areas)
+	Or method for multi texturing
+"Container" objects that optimize rendering of shapes (terrain or models specifically) using one or more textures
+	This must allow for editing points, however...
+Particle Effects - is there a library for this?
+Multiplayer (should this be integrated, added on, or not part?)
+Shaders
