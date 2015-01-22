@@ -25,18 +25,21 @@ try:
     FBO_AVAILABLE = True
 except:
     FBO_AVAILABLE = False
+    print 'Warning: FBO not available'
 
 try:
     from OpenGL.arrays import vbo
     VBO_AVAILABLE = bool(vbo.get_implementation())
 except:
     VBO_AVAILABLE = False
+    print 'Warning: VBO not available'
 
 try:
     from OpenGL.GL.EXT.texture_filter_anisotropic import *
     ANI_AVAILABLE = True
 except:
     ANI_AVAILABLE = False
+    print 'Warning: Anisotropic filtering not available'
 
 try:
     import Image as PIL
